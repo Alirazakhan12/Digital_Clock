@@ -1,0 +1,39 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ background-color: rgb(0, 0, 0);
+}
+#main-div{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#child{
+ margin-top: 15%
+}
+#hour,#min,#sec,#session{ 
+ padding: 16px;
+ background-color: rgb(37, 37, 37);
+ border-radius: 6px;
+ color: white;
+ margin-left: 10px;
+ font-size: 24px;
+ font-weight: bold;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ box-shadow: 0px 0px 12px rgb(255, 255, 255);
+ animation-name: anim;
+animation-duration: 5s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+}
+
+@keyframes anim{
+ 0%{
+  background-color:rgb(237, 100, 100);
+ }100%{
+  background-color:rgb(100, 102, 237);
+ transition: 1s;
+ }
+}
+
